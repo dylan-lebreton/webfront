@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "webfront"
+message: "If you use this software, please cite it."
+type: software
+authors:
+  - family-names: "LEBRETON"
+    given-names: "Dylan"
+version: 0.1.0
+license: MIT
+url: "https://github.com/dylan-lebreton/webfront"
