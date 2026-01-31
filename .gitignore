@@ -208,3 +208,6 @@ __marimo__/
 
 # Additional
 .DS_Store
+
+# Temporary
+examples
