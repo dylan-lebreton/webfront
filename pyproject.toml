@@ -13,7 +13,12 @@ license = "MIT"
 license-files = ["LICEN[CS]E*"]
 
 dependencies = [
+    "bs4>=0.0.2",
+    "jinja2>=3.1.6",
+    "langcodes>=3.5.1",
+    "pytest>=9.0.2",
     "treeproject>=0.1.0",
+    "typeguard>=4.4.4",
 ]
 
 classifiers = [
@@ -35,3 +40,11 @@ Repository = "https://github.com/dylan-lebreton/webfront"
 [build-system]
 requires = ["hatchling>=1.26"]
 build-backend = "hatchling.build"
+
+[tool.hatch.build]
+packages = ["src/webfront"]
+include = [
+    "src/webfront/**/*.html",
+    "src/webfront/**/*.css",
+    "src/webfront/**/*.js",
+]

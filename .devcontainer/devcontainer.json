@@ -1,0 +1,12 @@
+{
+  "name": "Python 3",
+  "build": { "dockerfile": "Dockerfile" },
+  "postCreateCommand": "cd /workspaces/webfront && uv sync --refresh",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python"
+      }
+    }
+  }
+}
